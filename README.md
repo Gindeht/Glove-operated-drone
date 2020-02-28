@@ -1,22 +1,5 @@
 # Glove-operated-drone
 
-Table of Contents:
-Glove Component:
-  Overview:
-  Parts List:
-  Additional Notes:
-Drone Component:
-  Overview:
-  Parts List:
-  Additional Notes:
-Client Component:
-  Overview:
-  Parts List:
-  Additional Notes:
-Full Parts List:
-Full Project Priority Order:
-Drone Component Details:
-
 Glove Component:
 =================
 Overview: 
@@ -45,8 +28,8 @@ We’re going to handbuild our drone. This is because we have very specific need
 
 Parts List:
 Raspberry Pi 4
-4 Motors
-4 Props
+2 Motors
+2 Wheels
 PI Camera
 2 power supplies
 LiPO Battery
@@ -56,10 +39,8 @@ Small Breadboard
 Additional Notes:
 Order of priority:
 Drone design
-Simple 4 rotor design, need 2 power supplies
-Try to get the drone to be completely balanced so we don’t need to account for that inflight
 Radio input
-Flight (manual control)
+Manual Control
 Integration with glove
 Camera output
 Full integration with client
@@ -84,47 +65,13 @@ Camera input to screen output
 Full control over the drone
 Establish priority of control with glove. 
 
-Full Parts List:
-=================
-<will copypaste when we complete all sections, we will need to add links to buy them if we can as well as cross out the things we already have. >
-.
 
 Full Project Priority Order:
 =================
 Build the glove and test it’s ability to transmit radio commands. 
-Build the drone and program its ability to fly using simple commands
+Build the drone and program its ability to move using simple commands
 Integrate glove control into the drone.
 Create the remote control program 
 Create control priority between client and glove
 
-Drone Component Details:
-=================
-Design: Standard 4 motor design 
-Drone parts:
-https://www.instructables.com/id/The-Drone-Pi/
-https://www.zdnet.com/article/how-to-build-a-200-smart-drone-with-the-pi-zero/
-alibaba
-Streaming PiCam to another PC using Python Sockets
-https://www.youtube.com/watch?v=bWwZF_zVf00
-PI Starter Kit
-https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V4G63M1?th=1
-Connection between Pis
-There is an option to setup the Pi aboard the drone as an access point, to where any PC that connects to it (like a wifi router) can receive and transmit commands/messages using wireless “internet”. 
-Ad hoc
-https://spin.atomicobject.com/2013/04/22/raspberry-pi-wireless-communication/
-Gyroscope sensor:
-https://www.amazon.com/SunFounder-MPU6050-Raspberry-Gyroscope-Accelerator/dp/B0151GI5VI
-Drone esc replacement?
-https://www.raspberrypi.org/forums/viewtopic.php?p=347830#p347830
-Pigpio?
-https://www.instructables.com/id/Driving-an-ESCBrushless-Motor-Using-Raspberry-Pi/
 
-Planned Schedule:
-=================
-Get the PI 4 Starter kit, motor controller, and motors
-Test motor functionality and programmability
-Build the drone frame and mount the PI/MC as well as rotors
-Test dual power supply
-Test hover capabilities
-Test radio functionality/ad hoc
- 
